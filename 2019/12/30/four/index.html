@@ -156,65 +156,70 @@
             <article id="post-four" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 class="article-title" itemprop="name">
       &#39;记一次使用git文件至码云时报错&#39;
     </h1>
   
 
-        
-        <a href="/2019/12/30/four/" class="archive-article-date">
+  
+  <a href="/2019/12/30/four/" class="archive-article-date">
   	<time datetime="2019-12-30T06:34:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-30</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="记一次使用git文件至码云时报错"><a href="#记一次使用git文件至码云时报错" class="headerlink" title="记一次使用git文件至码云时报错"></a>记一次使用git文件至码云时报错</h3><img src="/2019/12/30/four/1.png" class title="examplename">
+    <h3 id="记一次使用git文件至码云时报错"><a href="#记一次使用git文件至码云时报错" class="headerlink" title="记一次使用git文件至码云时报错"></a>记一次使用git文件至码云时报错</h3><img src="/2019/12/30/four/1.png" class title="examplename">
 
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">我本地创建了一个dataBank的文件夹(积累在日常工作写代码遇到的问题，且如何解决)</span><br><span class="line"> 并在码云上创建了一个仓库，并将本地的仓库和远程仓库连接， 这时就出现了上图问题。</span><br><span class="line"></span><br><span class="line">我用的方法如下：</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>. git init    （初始化一个本地仓库）</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. git add .  (将项目中所有文件添加到缓存中)</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>. git commit -m <span class="string">"添加注释信息"</span>    （将缓存中的文件commit到git库）</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. git remote add origin  HTTPS链接   （将本地库连接到远程库）</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>. git pull origin <span class="keyword">master</span>  <span class="title">(上传代码到远程库之前， 最好先pull</span>一下， 在执行 git push origin <span class="literal">master</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>. 最后执行： git push origin <span class="literal">master</span>.</span><br><span class="line"></span><br><span class="line">然而，执行相关命令后， 提交失败，经查阅资料，找到了原因：</span><br><span class="line"></span><br><span class="line">执行git push origin <span class="keyword">master</span> <span class="title">之后 ，就出现这个问题（被拒绝），是因为你在码云创建的仓库有ReadMe</span>文件， 而你本地仓库没有，就造成了本地和远程的不同步，</span><br><span class="line"></span><br><span class="line">解决办法：</span><br><span class="line"></span><br><span class="line">     方法一：</span><br><span class="line"></span><br><span class="line">          <span class="number">1</span>.   本地没有ReadMe 文件， 那么就在本地生成一个， 执行如下命令：</span><br><span class="line"></span><br><span class="line">                 git pull --rebase origin <span class="keyword">master</span>          <span class="title">(本地就生成了一个ReadMe</span>的文件)</span><br><span class="line"></span><br><span class="line">                 git push origin <span class="literal">master</span></span><br><span class="line">          <span class="number">2</span>.   强制上传覆盖远程文件， 执行如下命令：</span><br><span class="line">                 git push   -f   origin  <span class="keyword">master</span> <span class="title"></span></span><br><span class="line"><span class="title">     方法二：</span></span><br><span class="line"><span class="title"></span></span><br><span class="line"><span class="title">        先把git</span>的东西fetch到你本地然后merge后再push。</span><br><span class="line"></span><br><span class="line">         git fetch</span><br><span class="line">         git merge</span><br><span class="line"></span><br><span class="line">        如果在git merge的时候出现</span><br><span class="line"></span><br><span class="line">        fatal: refusing to merge unrelated histories</span><br><span class="line"></span><br><span class="line">        可以使用，git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span>，来处理一下。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                 </span><br><span class="line">ok！问题解决啦。</span><br></pre></td></tr></table></figure>
-      
+    
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/wx.jfif">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
+    
+    <div class="page-reward">
+      <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/wx.jfif">
+                    <span class="reward-type">微信</span>
                   </div>
-                </span>
+                  
+                </div>
               </span>
             </span>
-          </div>
-          </a>
+          </span>
         </div>
-      
+      </a>
     </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-        
+    
+
+    
+    
 <div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
@@ -264,13 +269,13 @@
 </div>
 
 <div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
-  
+
 <nav id="article-nav">
   
     <a href="/2020/01/08/debounceAndthrottle/" id="article-nav-newer" class="article-nav-link-wrap">
@@ -309,32 +314,40 @@
 
 
 
-  
-  
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 
 
           </div>
         </div>
       </div>
-      <footer id="footer">
+      <!-- 添加本站访客数 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<footer id="footer">
   <div class="outer">
     <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2020 深巷漫步
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+      <div class="footer-left">
+        &copy; 2020 深巷漫步
+      </div>
+      <div class="footer-right">
+        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/litten/hexo-theme-yilia"
+          target="_blank">Yilia</a> by Litten
+      </div>
     </div>
   </div>
+  <!-- 添加本站访客数 -->
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {

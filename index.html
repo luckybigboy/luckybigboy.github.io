@@ -152,24 +152,24 @@
     <article id="post-vueBagErr" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/03/31/vueBagErr/">&#39;vue打包报错&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/03/31/vueBagErr/" class="archive-article-date">
+  
+  <a href="/2020/03/31/vueBagErr/" class="archive-article-date">
   	<time datetime="2020-03-31T03:39:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">报错： vue打包时候报错（压缩css错误）building <span class="keyword">for</span> production...Error processing <span class="keyword">file</span>: <span class="keyword">static</span><span class="regexp">/css/</span>app.<span class="number">48</span>f6b2b64ad6a4a201fff9556ed00051.css</span><br></pre></td></tr></table></figure>
+    <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">报错： vue打包时候报错（压缩css错误）building <span class="keyword">for</span> production...Error processing <span class="keyword">file</span>: <span class="keyword">static</span><span class="regexp">/css/</span>app.<span class="number">48</span>f6b2b64ad6a4a201fff9556ed00051.css</span><br></pre></td></tr></table></figure>
 
 <img src="/2020/03/31/vueBagErr/1.png" class title="examplename">
 
@@ -179,24 +179,28 @@
 
 <p>添加上面画线处代码， 就可以解决css压缩错误。</p>
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/31/vueBagErr/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/31/vueBagErr/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -223,24 +227,24 @@
     <article id="post-css如何实现盒子水平垂直居中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/03/30/css%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">&#39;css如何实现盒子水平垂直居中&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/03/30/css%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" class="archive-article-date">
+  
+  <a href="/2020/03/30/css%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" class="archive-article-date">
   	<time datetime="2020-03-30T01:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-使用css3中的属性-transform-translate-x-y"><a href="#1-使用css3中的属性-transform-translate-x-y" class="headerlink" title="1. 使用css3中的属性: transform: translate(x,y)"></a>1. 使用css3中的属性: transform: translate(x,y)</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span>   </span><br><span class="line"><span class="css"> <span class="selector-class">.box</span> &#123;</span></span><br><span class="line">      width: 100px;</span><br><span class="line">      height: 100px;</span><br><span class="line">      background: orange;</span><br><span class="line">      position: absolute;</span><br><span class="line">      left: 50%;</span><br><span class="line">      top: 50%;</span><br><span class="line">      transform: translate(-50%, -50%);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <h3 id="1-使用css3中的属性-transform-translate-x-y"><a href="#1-使用css3中的属性-transform-translate-x-y" class="headerlink" title="1. 使用css3中的属性: transform: translate(x,y)"></a>1. 使用css3中的属性: transform: translate(x,y)</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span>   </span><br><span class="line"><span class="css"> <span class="selector-class">.box</span> &#123;</span></span><br><span class="line">      width: 100px;</span><br><span class="line">      height: 100px;</span><br><span class="line">      background: orange;</span><br><span class="line">      position: absolute;</span><br><span class="line">      left: 50%;</span><br><span class="line">      top: 50%;</span><br><span class="line">      transform: translate(-50%, -50%);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="2-使用flex布局"><a href="#2-使用flex布局" class="headerlink" title="2. 使用flex布局"></a>2. 使用flex布局</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      display: flex;</span><br><span class="line">      justify-content: center;</span><br><span class="line">      align-items: center;</span><br><span class="line">      height: 100vh;</span><br><span class="line">      margin: 0;</span><br><span class="line">      padding: 0;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line"><span class="css">    <span class="selector-class">.box</span> &#123;</span></span><br><span class="line">      width: 100px;</span><br><span class="line">      height: 100px;</span><br><span class="line">      background: orange;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -248,24 +252,28 @@
 
 <p>若还有其他方法， 请与我留言<a href="https://github.com/luckybigboy/luckybigboy.github.io" target="_blank" rel="noopener">luckybigboy</a></p>
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/30/css%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/30/css%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -292,47 +300,51 @@
     <article id="post-messageBox" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/03/22/messageBox/">messageBox</a>
     </h1>
   
 
-        
-        <a href="/2020/03/22/messageBox/" class="archive-article-date">
+  
+  <a href="/2020/03/22/messageBox/" class="archive-article-date">
   	<time datetime="2020-03-22T04:01:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">element</span>中的messageBox组件无法在按需引入中显示取消按钮，解决方法</span><br></pre></td></tr></table></figure>
+    <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">element</span>中的messageBox组件无法在按需引入中显示取消按钮，解决方法</span><br></pre></td></tr></table></figure>
 
 <img src="/2020/03/22/messageBox/2.png" class title="examplename">
 
 <p>如果需要在按需引入中显示取消按钮， 就必须要写成上图所示，如果使用alert方式， 也一样</p>
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/22/messageBox/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/22/messageBox/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -359,24 +371,24 @@
     <article id="post-one" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/03/12/one/">&#39;vue + elementui 中的弹窗组件封装成公共组件&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/03/12/one/" class="archive-article-date">
+  
+  <a href="/2020/03/12/one/" class="archive-article-date">
   	<time datetime="2020-03-12T05:35:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-12</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="vue-elementui-中的弹窗组件封装成公共组件"><a href="#vue-elementui-中的弹窗组件封装成公共组件" class="headerlink" title="vue + elementui 中的弹窗组件封装成公共组件"></a>vue + elementui 中的弹窗组件封装成公共组件</h3><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">1. 第一步</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">el-dialog</span> <span class="attr">title</span>=<span class="string">"提示"</span></span></span></span><br><span class="line"><span class="xml">               :visible="dialogVisible"</span></span><br><span class="line"><span class="xml">               width="30%"&gt;</span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><span class="template-variable">&#123;&#123;msg&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">slot</span>=<span class="string">"footer"</span></span></span></span><br><span class="line"><span class="xml">            class="dialog-footer"&gt;</span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">el-button</span> @<span class="attr">click</span>=<span class="string">"clear"</span>&gt;</span>取 消<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">type</span>=<span class="string">"primary"</span></span></span></span><br><span class="line"><span class="xml">                   @click="sure"&gt;确 定<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">el-dialog</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">export default &#123;</span></span><br><span class="line"><span class="xml">  data () &#123;</span></span><br><span class="line"><span class="xml">    return &#123;</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;,</span></span><br><span class="line"><span class="xml">  props: &#123;</span></span><br><span class="line"><span class="xml">    dialogVisible: &#123;</span></span><br><span class="line"><span class="xml">      type: Boolean,</span></span><br><span class="line"><span class="xml">      default: false</span></span><br><span class="line"><span class="xml">    &#125;,</span></span><br><span class="line"><span class="xml">    msg: &#123;</span></span><br><span class="line"><span class="xml">      type: String,</span></span><br><span class="line"><span class="xml">      default: '是否退出页面'</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;,</span></span><br><span class="line"><span class="xml">  methods: &#123;</span></span><br><span class="line"><span class="xml">    clear () &#123;</span></span><br><span class="line"><span class="xml">      this.$emit('clear', false);</span></span><br><span class="line"><span class="xml">    &#125;,</span></span><br><span class="line"><span class="xml">    sure () &#123;</span></span><br><span class="line"><span class="xml">      this.$emit('sure', false);</span></span><br><span class="line"><span class="xml">      this.$router.push('/register');</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"scss"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+    <h3 id="vue-elementui-中的弹窗组件封装成公共组件"><a href="#vue-elementui-中的弹窗组件封装成公共组件" class="headerlink" title="vue + elementui 中的弹窗组件封装成公共组件"></a>vue + elementui 中的弹窗组件封装成公共组件</h3><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">1. 第一步</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">el-dialog</span> <span class="attr">title</span>=<span class="string">"提示"</span></span></span></span><br><span class="line"><span class="xml">               :visible="dialogVisible"</span></span><br><span class="line"><span class="xml">               width="30%"&gt;</span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><span class="template-variable">&#123;&#123;msg&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">slot</span>=<span class="string">"footer"</span></span></span></span><br><span class="line"><span class="xml">            class="dialog-footer"&gt;</span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">el-button</span> @<span class="attr">click</span>=<span class="string">"clear"</span>&gt;</span>取 消<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">type</span>=<span class="string">"primary"</span></span></span></span><br><span class="line"><span class="xml">                   @click="sure"&gt;确 定<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">el-dialog</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">export default &#123;</span></span><br><span class="line"><span class="xml">  data () &#123;</span></span><br><span class="line"><span class="xml">    return &#123;</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;,</span></span><br><span class="line"><span class="xml">  props: &#123;</span></span><br><span class="line"><span class="xml">    dialogVisible: &#123;</span></span><br><span class="line"><span class="xml">      type: Boolean,</span></span><br><span class="line"><span class="xml">      default: false</span></span><br><span class="line"><span class="xml">    &#125;,</span></span><br><span class="line"><span class="xml">    msg: &#123;</span></span><br><span class="line"><span class="xml">      type: String,</span></span><br><span class="line"><span class="xml">      default: '是否退出页面'</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;,</span></span><br><span class="line"><span class="xml">  methods: &#123;</span></span><br><span class="line"><span class="xml">    clear () &#123;</span></span><br><span class="line"><span class="xml">      this.$emit('clear', false);</span></span><br><span class="line"><span class="xml">    &#125;,</span></span><br><span class="line"><span class="xml">    sure () &#123;</span></span><br><span class="line"><span class="xml">      this.$emit('sure', false);</span></span><br><span class="line"><span class="xml">      this.$router.push('/register');</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  &#125;</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"scss"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">2. 第二步</span><br><span class="line">import MsgTip <span class="keyword">from</span> <span class="string">'./msgTip.vue'</span>;</span><br><span class="line">const tip = &#123;&#125;;</span><br><span class="line">tip.install = function (vue) &#123;</span><br><span class="line">  vue.component(<span class="string">'MsgTip'</span>, MsgTip);</span><br><span class="line">&#125;</span><br><span class="line"><span class="builtin-name">export</span><span class="built_in"> default </span>tip;</span><br></pre></td></tr></table></figure>
 
@@ -392,24 +404,28 @@
 
 
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/12/one/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/12/one/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -436,24 +452,24 @@
     <article id="post-two" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/02/11/two/">&#39;vue中使用路由懒加载和组件懒加载&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/02/11/two/" class="archive-article-date">
+  
+  <a href="/2020/02/11/two/" class="archive-article-date">
   	<time datetime="2020-02-11T06:16:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-11</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="vue中使用路由懒加载和组件懒加载"><a href="#vue中使用路由懒加载和组件懒加载" class="headerlink" title="vue中使用路由懒加载和组件懒加载"></a>vue中使用路由懒加载和组件懒加载</h3><ol>
+    <h3 id="vue中使用路由懒加载和组件懒加载"><a href="#vue中使用路由懒加载和组件懒加载" class="headerlink" title="vue中使用路由懒加载和组件懒加载"></a>vue中使用路由懒加载和组件懒加载</h3><ol>
 <li><p>为什么需要使用懒加载？</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">避免首屏组件在加载时，速度慢且会出现白屏，提高用户体验。</span><br></pre></td></tr></table></figure></li>
 <li><p>何为懒加载？</p>
@@ -468,24 +484,28 @@
 
 
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/11/two/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/02/11/two/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -512,44 +532,48 @@
     <article id="post-css实现三角形平滑旋转" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/">&#39;css实现三角形平滑旋转&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/" class="archive-article-date">
+  
+  <a href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/" class="archive-article-date">
   	<time datetime="2020-01-11T03:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-11</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">  直接上代码</span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span> &#123;</span></span><br><span class="line">      margin: 200px;</span><br><span class="line">      width: 0px;</span><br><span class="line">      height: 0px;</span><br><span class="line">      border-left: 30px solid transparent;</span><br><span class="line">      border-right: 30px solid transparent;</span><br><span class="line">      border-top: 30px solid orangered;</span><br><span class="line"><span class="css">      <span class="comment">/* 一定时间平滑过渡 */</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-o-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-webkit-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-moz-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span><span class="selector-pseudo">:active</span> &#123;</span></span><br><span class="line">      transform: rotateZ(180deg);</span><br><span class="line">      -o-transform: rotateZ(180deg);</span><br><span class="line">      -moz-transform: rotateZ(180deg);</span><br><span class="line">      -webkit-transform: rotateZ(180deg);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"Arrow"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">  直接上代码</span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span> &#123;</span></span><br><span class="line">      margin: 200px;</span><br><span class="line">      width: 0px;</span><br><span class="line">      height: 0px;</span><br><span class="line">      border-left: 30px solid transparent;</span><br><span class="line">      border-right: 30px solid transparent;</span><br><span class="line">      border-top: 30px solid orangered;</span><br><span class="line"><span class="css">      <span class="comment">/* 一定时间平滑过渡 */</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-o-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-webkit-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-moz-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span><span class="selector-pseudo">:active</span> &#123;</span></span><br><span class="line">      transform: rotateZ(180deg);</span><br><span class="line">      -o-transform: rotateZ(180deg);</span><br><span class="line">      -moz-transform: rotateZ(180deg);</span><br><span class="line">      -webkit-transform: rotateZ(180deg);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"Arrow"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -576,45 +600,49 @@
     <article id="post-debounceAndthrottle" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2020/01/08/debounceAndthrottle/">&#39;debounceAndthrottle&#39;</a>
     </h1>
   
 
-        
-        <a href="/2020/01/08/debounceAndthrottle/" class="archive-article-date">
+  
+  <a href="/2020/01/08/debounceAndthrottle/" class="archive-article-date">
   	<time datetime="2020-01-08T05:21:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-08</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="函数防抖和节流"><a href="#函数防抖和节流" class="headerlink" title="函数防抖和节流"></a>函数防抖和节流</h2><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> <span class="number">1.</span> 函数防抖（事件频繁触发，在特定时间内，函数只被触发一次， 如果在特定时间内，不断被触发，则会重新计算时间）</span><br><span class="line">  &lt;button id=<span class="string">"btn1"</span>&gt;防抖&lt;/button&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 防抖</span></span><br><span class="line">       <span class="keyword">function</span> get<span class="constructor">Data()</span> &#123;</span><br><span class="line">           console.log(<span class="number">1111</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       const debounce =<span class="function"> (<span class="params">fn</span>, <span class="params">delay</span> = 300) =&gt;</span> &#123;</span><br><span class="line">           <span class="keyword">let</span> timer = null;</span><br><span class="line">           return<span class="function"> (...<span class="params">args</span>) =&gt;</span> &#123;</span><br><span class="line">               <span class="keyword">if</span> (timer) &#123;</span><br><span class="line">                   clear<span class="constructor">Timeout(<span class="params">timer</span>)</span></span><br><span class="line">               &#125;</span><br><span class="line">               timer = set<span class="constructor">Timeout(()</span> =&gt; &#123;</span><br><span class="line">                   fn.apply(this, args)</span><br><span class="line">               &#125;, delay)</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">let</span> btn1 = document.get<span class="constructor">ElementById('<span class="params">btn1</span>')</span></span><br><span class="line">       btn1.add<span class="constructor">EventListener('<span class="params">click</span>', <span class="params">debounce</span>(<span class="params">getData</span>, 500)</span>)</span><br></pre></td></tr></table></figure>
+    <h2 id="函数防抖和节流"><a href="#函数防抖和节流" class="headerlink" title="函数防抖和节流"></a>函数防抖和节流</h2><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> <span class="number">1.</span> 函数防抖（事件频繁触发，在特定时间内，函数只被触发一次， 如果在特定时间内，不断被触发，则会重新计算时间）</span><br><span class="line">  &lt;button id=<span class="string">"btn1"</span>&gt;防抖&lt;/button&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 防抖</span></span><br><span class="line">       <span class="keyword">function</span> get<span class="constructor">Data()</span> &#123;</span><br><span class="line">           console.log(<span class="number">1111</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       const debounce =<span class="function"> (<span class="params">fn</span>, <span class="params">delay</span> = 300) =&gt;</span> &#123;</span><br><span class="line">           <span class="keyword">let</span> timer = null;</span><br><span class="line">           return<span class="function"> (...<span class="params">args</span>) =&gt;</span> &#123;</span><br><span class="line">               <span class="keyword">if</span> (timer) &#123;</span><br><span class="line">                   clear<span class="constructor">Timeout(<span class="params">timer</span>)</span></span><br><span class="line">               &#125;</span><br><span class="line">               timer = set<span class="constructor">Timeout(()</span> =&gt; &#123;</span><br><span class="line">                   fn.apply(this, args)</span><br><span class="line">               &#125;, delay)</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">let</span> btn1 = document.get<span class="constructor">ElementById('<span class="params">btn1</span>')</span></span><br><span class="line">       btn1.add<span class="constructor">EventListener('<span class="params">click</span>', <span class="params">debounce</span>(<span class="params">getData</span>, 500)</span>)</span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2.</span> 函数节流 （事件频繁被触发， 在特定时间内，只触发一次， 若在单位时间内， 触发多次， 只要一次生效）</span><br><span class="line"><span class="comment">// 节流</span></span><br><span class="line">       <span class="function"><span class="keyword">function</span> <span class="title">queryData</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="string">'搜索'</span> + text);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">const</span> throttle = <span class="function">(<span class="params">fn, delay = 300</span>) =&gt;</span> &#123;</span><br><span class="line">           <span class="keyword">let</span> flag = <span class="literal">false</span>;</span><br><span class="line">           <span class="keyword">return</span> <span class="function">(<span class="params">...arg</span>) =&gt;</span> &#123;</span><br><span class="line">               <span class="keyword">if</span> (flag) <span class="keyword">return</span>;</span><br><span class="line">               flag = <span class="literal">true</span>;</span><br><span class="line">               setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                   fn.apply(<span class="keyword">this</span>, arg);</span><br><span class="line">                   flag = <span class="literal">false</span>;</span><br><span class="line">               &#125;, delay);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">const</span> search = <span class="built_in">document</span>.getElementById(<span class="string">'search'</span>);</span><br><span class="line">       <span class="keyword">const</span> throttleFn = throttle(queryData, <span class="number">500</span>);</span><br><span class="line">       search.addEventListener(<span class="string">'keyup'</span>, <span class="function">(<span class="params">event</span>) =&gt;</span> &#123;</span><br><span class="line">           throttleFn(event.target.value)</span><br><span class="line">       &#125;)</span><br></pre></td></tr></table></figure>
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/08/debounceAndthrottle/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/08/debounceAndthrottle/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -641,44 +669,48 @@
     <article id="post-four" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2019/12/30/four/">&#39;记一次使用git文件至码云时报错&#39;</a>
     </h1>
   
 
-        
-        <a href="/2019/12/30/four/" class="archive-article-date">
+  
+  <a href="/2019/12/30/four/" class="archive-article-date">
   	<time datetime="2019-12-30T06:34:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-30</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="记一次使用git文件至码云时报错"><a href="#记一次使用git文件至码云时报错" class="headerlink" title="记一次使用git文件至码云时报错"></a>记一次使用git文件至码云时报错</h3><img src="/2019/12/30/four/1.png" class title="examplename">
+    <h3 id="记一次使用git文件至码云时报错"><a href="#记一次使用git文件至码云时报错" class="headerlink" title="记一次使用git文件至码云时报错"></a>记一次使用git文件至码云时报错</h3><img src="/2019/12/30/four/1.png" class title="examplename">
 
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">我本地创建了一个dataBank的文件夹(积累在日常工作写代码遇到的问题，且如何解决)</span><br><span class="line"> 并在码云上创建了一个仓库，并将本地的仓库和远程仓库连接， 这时就出现了上图问题。</span><br><span class="line"></span><br><span class="line">我用的方法如下：</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>. git init    （初始化一个本地仓库）</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. git add .  (将项目中所有文件添加到缓存中)</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>. git commit -m <span class="string">"添加注释信息"</span>    （将缓存中的文件commit到git库）</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. git remote add origin  HTTPS链接   （将本地库连接到远程库）</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>. git pull origin <span class="keyword">master</span>  <span class="title">(上传代码到远程库之前， 最好先pull</span>一下， 在执行 git push origin <span class="literal">master</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>. 最后执行： git push origin <span class="literal">master</span>.</span><br><span class="line"></span><br><span class="line">然而，执行相关命令后， 提交失败，经查阅资料，找到了原因：</span><br><span class="line"></span><br><span class="line">执行git push origin <span class="keyword">master</span> <span class="title">之后 ，就出现这个问题（被拒绝），是因为你在码云创建的仓库有ReadMe</span>文件， 而你本地仓库没有，就造成了本地和远程的不同步，</span><br><span class="line"></span><br><span class="line">解决办法：</span><br><span class="line"></span><br><span class="line">     方法一：</span><br><span class="line"></span><br><span class="line">          <span class="number">1</span>.   本地没有ReadMe 文件， 那么就在本地生成一个， 执行如下命令：</span><br><span class="line"></span><br><span class="line">                 git pull --rebase origin <span class="keyword">master</span>          <span class="title">(本地就生成了一个ReadMe</span>的文件)</span><br><span class="line"></span><br><span class="line">                 git push origin <span class="literal">master</span></span><br><span class="line">          <span class="number">2</span>.   强制上传覆盖远程文件， 执行如下命令：</span><br><span class="line">                 git push   -f   origin  <span class="keyword">master</span> <span class="title"></span></span><br><span class="line"><span class="title">     方法二：</span></span><br><span class="line"><span class="title"></span></span><br><span class="line"><span class="title">        先把git</span>的东西fetch到你本地然后merge后再push。</span><br><span class="line"></span><br><span class="line">         git fetch</span><br><span class="line">         git merge</span><br><span class="line"></span><br><span class="line">        如果在git merge的时候出现</span><br><span class="line"></span><br><span class="line">        fatal: refusing to merge unrelated histories</span><br><span class="line"></span><br><span class="line">        可以使用，git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span>，来处理一下。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                 </span><br><span class="line">ok！问题解决啦。</span><br></pre></td></tr></table></figure>
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/30/four/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/30/four/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -705,46 +737,50 @@
     <article id="post-three" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
+      <header class=" article-header">
+  
   
     <h1 itemprop="name">
       <a class="article-title" href="/2019/12/24/three/">&#39;vue-cli3(脚手架)如何配置别名&#39;</a>
     </h1>
   
 
-        
-        <a href="/2019/12/24/three/" class="archive-article-date">
+  
+  <a href="/2019/12/24/three/" class="archive-article-date">
   	<time datetime="2019-12-24T06:24:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-24</time>
 </a>
-        
-      </header>
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="vue-cli3-脚手架-如何配置别名"><a href="#vue-cli3-脚手架-如何配置别名" class="headerlink" title="vue-cli3(脚手架)如何配置别名"></a>vue-cli3(脚手架)如何配置别名</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在项目根目录找到<span class="selector-tag">vue</span><span class="selector-class">.config</span><span class="selector-class">.js</span>文件：</span><br></pre></td></tr></table></figure>
+    <h3 id="vue-cli3-脚手架-如何配置别名"><a href="#vue-cli3-脚手架-如何配置别名" class="headerlink" title="vue-cli3(脚手架)如何配置别名"></a>vue-cli3(脚手架)如何配置别名</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在项目根目录找到<span class="selector-tag">vue</span><span class="selector-class">.config</span><span class="selector-class">.js</span>文件：</span><br></pre></td></tr></table></figure>
 <img src="/2019/12/24/three/1.png" class title="examplename">
 
 <p> 以上就是别名的配置</p>
 <pre><code>注意： 在html中使用别名，需要加~</code></pre><img src="/2019/12/24/three/2.png" class title="examplename">
-      
+    
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+  </div>
+  <!-- <span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  </span> -->
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/24/three/">展开全文 >></a>
-        </p>
-      
+  <div class="article-info article-info-index">
+    
+    
+    
 
-      
-      <div class="clearfix"></div>
-    </div>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/24/three/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
 
@@ -774,18 +810,26 @@
           </div>
         </div>
       </div>
-      <footer id="footer">
+      <!-- 添加本站访客数 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<footer id="footer">
   <div class="outer">
     <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2020 深巷漫步
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+      <div class="footer-left">
+        &copy; 2020 深巷漫步
+      </div>
+      <div class="footer-right">
+        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/litten/hexo-theme-yilia"
+          target="_blank">Yilia</a> by Litten
+      </div>
     </div>
   </div>
+  <!-- 添加本站访客数 -->
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
