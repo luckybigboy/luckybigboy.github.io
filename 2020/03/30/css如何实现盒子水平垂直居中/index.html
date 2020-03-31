@@ -49,16 +49,6 @@
 <!-- 网易云音乐 -->
 
 
-
-
-
-<div style="margin-right:10px;margin-left:0; padding:5px 0; display: none;">
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
-    src="//music.163.com/outchain/player?type=2&id=478507889&auto=1&height=66"></iframe>
-</div>
-
-    
-
     <div class="overlay"
       style="background: #4d4d4d;background: url('/assets/top.gif') no-repeat ; z-index:-1"></div>
 <!-- <div class="overlay" style="background: #4d4d4d"></div> -->
@@ -77,18 +67,12 @@
 			
         <li><a href="/">主页</a></li>
         
-        <li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
     		
         
         <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-        
-        
-        
-        <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
         
         
         
@@ -101,15 +85,6 @@
 				
         <a class="github" target="_blank" href="#" title="github"><i
             class="icon-github"></i></a>
-        
-        <a class="weibo" target="_blank" href="#" title="weibo"><i
-            class="icon-weibo"></i></a>
-        
-        <a class="rss" target="_blank" href="#" title="rss"><i
-            class="icon-rss"></i></a>
-        
-        <a class="zhihu" target="_blank" href="#" title="zhihu"><i
-            class="icon-zhihu"></i></a>
         
 			</div>
 		</nav>
@@ -137,20 +112,12 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
@@ -159,9 +126,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -219,6 +184,11 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wx.jfif">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -296,15 +266,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/31/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/31/vueBagErr/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          &#39;css实现三角形平滑旋转&#39;
+          &#39;vue打包报错&#39;
         
       </div>
     </a>
   
+  
+    <a href="/2020/03/22/messageBox/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">messageBox</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -389,25 +364,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -471,43 +438,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">个人博客初建中...&lt;br&gt;&lt;br&gt;不喜勿碰,希望不足之处，大家能提出,在github上留言&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
