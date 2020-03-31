@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://luckybigboy.github.io">
-  <title>&#39;css实现三角形平滑旋转&#39; | Hexo</title>
+  <title>&#39;记一次使用git文件至码云时报错&#39; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12345678910111213141516171819202122232425262728  直接上代码    &lt;style&gt;    #Arrow &amp;#123;      margin: 200px;      width: 0px;      height: 0px;      border-left: 30px solid transparent;      border-ri">
+  <meta name="description" content="记一次使用git文件至码云时报错  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748我本地创建了一个dataBank的文件夹(积累在日常工作写代码遇到的问题，且如何解决) 并在码云上创建了一个仓库，并将本地的仓库和远程仓库连接， 这时就出现了上图问题。我用的方法如下：1.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;css实现三角形平滑旋转&#39;">
-<meta property="og:url" content="https://luckybigboy.github.io/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/index.html">
+<meta property="og:title" content="&#39;记一次使用git文件至码云时报错&#39;">
+<meta property="og:url" content="https://luckybigboy.github.io/2020/03/31/four/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728  直接上代码    &lt;style&gt;    #Arrow &amp;#123;      margin: 200px;      width: 0px;      height: 0px;      border-left: 30px solid transparent;      border-ri">
+<meta property="og:description" content="记一次使用git文件至码云时报错  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748我本地创建了一个dataBank的文件夹(积累在日常工作写代码遇到的问题，且如何解决) 并在码云上创建了一个仓库，并将本地的仓库和远程仓库连接， 这时就出现了上图问题。我用的方法如下：1.">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-11T03:35:50.000Z">
-<meta property="article:modified_time" content="2020-03-31T05:14:40.366Z">
+<meta property="og:image" content="https://luckybigboy.github.io/2020/03/31/four/1.png">
+<meta property="article:published_time" content="2020-03-31T06:34:47.000Z">
+<meta property="article:modified_time" content="2020-03-31T07:17:03.983Z">
 <meta property="article:author" content="深巷漫步">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://luckybigboy.github.io/2020/03/31/four/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,29 +143,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-css实现三角形平滑旋转" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-four" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      &#39;css实现三角形平滑旋转&#39;
+      &#39;记一次使用git文件至码云时报错&#39;
     </h1>
   
 
         
-        <a href="/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/" class="archive-article-date">
-  	<time datetime="2020-01-11T03:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-11</time>
+        <a href="/2020/03/31/four/" class="archive-article-date">
+  	<time datetime="2020-03-31T06:34:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">  直接上代码</span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span> &#123;</span></span><br><span class="line">      margin: 200px;</span><br><span class="line">      width: 0px;</span><br><span class="line">      height: 0px;</span><br><span class="line">      border-left: 30px solid transparent;</span><br><span class="line">      border-right: 30px solid transparent;</span><br><span class="line">      border-top: 30px solid orangered;</span><br><span class="line"><span class="css">      <span class="comment">/* 一定时间平滑过渡 */</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-o-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-webkit-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">-moz-transition</span>: 0<span class="selector-class">.5s</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">    <span class="selector-id">#Arrow</span><span class="selector-pseudo">:active</span> &#123;</span></span><br><span class="line">      transform: rotateZ(180deg);</span><br><span class="line">      -o-transform: rotateZ(180deg);</span><br><span class="line">      -moz-transform: rotateZ(180deg);</span><br><span class="line">      -webkit-transform: rotateZ(180deg);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"Arrow"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h3 id="记一次使用git文件至码云时报错"><a href="#记一次使用git文件至码云时报错" class="headerlink" title="记一次使用git文件至码云时报错"></a>记一次使用git文件至码云时报错</h3><img src="/2020/03/31/four/1.png" class title="examplename">
 
-
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">我本地创建了一个dataBank的文件夹(积累在日常工作写代码遇到的问题，且如何解决)</span><br><span class="line"> 并在码云上创建了一个仓库，并将本地的仓库和远程仓库连接， 这时就出现了上图问题。</span><br><span class="line"></span><br><span class="line">我用的方法如下：</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>. git init    （初始化一个本地仓库）</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. git add .  (将项目中所有文件添加到缓存中)</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>. git commit -m <span class="string">"添加注释信息"</span>    （将缓存中的文件commit到git库）</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. git remote add origin  HTTPS链接   （将本地库连接到远程库）</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>. git pull origin <span class="keyword">master</span>  <span class="title">(上传代码到远程库之前， 最好先pull</span>一下， 在执行 git push origin <span class="literal">master</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>. 最后执行： git push origin <span class="literal">master</span>.</span><br><span class="line"></span><br><span class="line">然而，执行相关命令后， 提交失败，经查阅资料，找到了原因：</span><br><span class="line"></span><br><span class="line">执行git push origin <span class="keyword">master</span> <span class="title">之后 ，就出现这个问题（被拒绝），是因为你在码云创建的仓库有ReadMe</span>文件， 而你本地仓库没有，就造成了本地和远程的不同步，</span><br><span class="line"></span><br><span class="line">解决办法：</span><br><span class="line"></span><br><span class="line">     方法一：</span><br><span class="line"></span><br><span class="line">          <span class="number">1</span>.   本地没有ReadMe 文件， 那么就在本地生成一个， 执行如下命令：</span><br><span class="line"></span><br><span class="line">                 git pull --rebase origin <span class="keyword">master</span>          <span class="title">(本地就生成了一个ReadMe</span>的文件)</span><br><span class="line"></span><br><span class="line">                 git push origin <span class="literal">master</span></span><br><span class="line">          <span class="number">2</span>.   强制上传覆盖远程文件， 执行如下命令：</span><br><span class="line">                 git push   -f   origin  <span class="keyword">master</span> <span class="title"></span></span><br><span class="line"><span class="title">     方法二：</span></span><br><span class="line"><span class="title"></span></span><br><span class="line"><span class="title">        先把git</span>的东西fetch到你本地然后merge后再push。</span><br><span class="line"></span><br><span class="line">         git fetch</span><br><span class="line">         git merge</span><br><span class="line"></span><br><span class="line">        如果在git merge的时候出现</span><br><span class="line"></span><br><span class="line">        fatal: refusing to merge unrelated histories</span><br><span class="line"></span><br><span class="line">        可以使用，git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span>，来处理一下。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                 </span><br><span class="line">ok！问题解决啦。</span><br></pre></td></tr></table></figure>
       
 
       
@@ -247,7 +249,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://luckybigboy.github.io/2020/01/11/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%B9%B3%E6%BB%91%E6%97%8B%E8%BD%AC/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://luckybigboy.github.io/2020/03/31/four/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,18 +263,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/11/two/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          &#39;vue中使用路由懒加载和组件懒加载&#39;
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/01/08/debounceAndthrottle/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">&#39;debounceAndthrottle&#39;</div>
+    <a href="/2020/03/31/vueBagErr/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">&#39;vue打包报错&#39;</div>
       <i class="icon-circle-right"></i>
     </a>
   
